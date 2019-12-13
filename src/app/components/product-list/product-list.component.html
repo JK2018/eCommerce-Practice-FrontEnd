@@ -1,0 +1,35 @@
+<div class="container">
+
+
+
+  <div class="row">
+
+    <div class="col-lg-4" *ngFor="let product of products">
+      <div class="card mb-3 mr-3" >
+        <h3 class="card-header">{{product.name}}</h3>
+        <div class="card-body">
+          <h5 class="card-title">{{product.unitPrice | currency:'EUR'}}</h5>
+          <h6 class="card-subtitle text-muted"> Special Offer</h6>
+        </div>
+        <img style="height: 200px; width: 100%; display: inherit;"
+          src="https://picsum.photos/200/300"
+          alt="Card image">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          </div>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+        <div class="card-footer text-muted">
+            ref : {{product.sku}}
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
